@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+
+    @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+body{
+  color: aliceblue;
+  background: linear-gradient(-45deg, rgb(47, 0, 79), rgb(154, 0, 214), rgba(32, 0, 0, 0.871), #1178d8);
+  background-size: 150% 150%;
+    animation: gradient 15s ease infinite;
+}
+    .huge-buttons-section {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+
+
+    .btn1{
+      height: 300px;
+      background-color: rgba(255, 255, 255, 0.06);
+      color: white;
+      border: 1px solid rgba(245, 245, 245, 0.341);
+      width: 100%;
+      max-width: 250px; /* Adjust max-width as needed */
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .btn {
+      
+      background-color: rgba(255, 255, 255, 0.06);
+      color: white;
+      border: 1px solid rgba(245, 245, 245, 0.341);
+      width: 100%;
+      max-width: 250px; /* Adjust max-width as needed */
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .btn1 img {
+      width: 50px; /* Adjust image size as needed */
+      padding-top: 90px;
+    }
+
+    .btn:hover {
+      transform: scale(1.05); /* Enlarge the button */
+      opacity: 0.8; /* Reduce opacity on hover */
+      background-color: rgba(255, 255, 255, 0.06); /* Set background color on hover */
+      color: white; /* Set text color on hover */
+    }
+
+    .btn:hover:focus {
+      outline: none; /* Remove outline on focus */
+      box-shadow: none; /* Remove box shadow on focus */
+    }
+
+    /* New CSS for the loader */
+    
+.navbar-nav{
+  padding-left: 120px;
+}
+
+/* Add glow effect on hover for Unicode symbol */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px rgba(255,255,255,0.7); }
+    50% { text-shadow: 0 0 20px rgba(255,255,255,0.9), 0 0 30px rgba(255,255,255,0.5); }
+    100% { text-shadow: 0 0 5px rgba(255,255,255,0.7); }
+}
+
+span.glowing:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.card {
+      margin-bottom: 20px;
+      border: none;
+      cursor: pointer;
+      background-color:rgba(255, 255, 255, 0.06);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+
+  <!-- Navigation Bar -->
+  <!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(245, 245, 245, 0.08); border-bottom: 1px solid whitesmoke;">
+  <div class="container">
+      <!-- Left side: Brand -->
+      <a class="navbar-brand" href="#">OneStopSolutions</a>
+
+      <!-- Center: Navigation Links -->
+      <div class="navbar-nav mx-auto">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="notes_pdf.html">Notes</a>
+          <a class="nav-item nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSexx5Kwza9OA15Q1OLKCit_kMUuDRdawL_6F-2hfRRMzln3Xw/viewform">Upload</a>
+      </div>
+
+      <!-- Right side: Login/Sign Up Button -->
+      <div class="ml-auto">
+          <a class="btn btn-outline-light" href="express\index_sign_in.html">Login/Sign Up</a>
+      </div>
+  </div>
+</nav>
+
+
+  <!-- Section below Navigation Bar -->
+  <section class="welcome-section" style="margin: 30px;">
+    
+    <div class="container">
+      <center>
+      <img src="pngegg.png" style="width: 20%; filter: brightness(0) invert(1) grayscale(100%) brightness(100%) contrast(100%);" >
+      </center>
+      <div class="row" style="padding-left: 15%;">
+        <div class="col-lg-10">
+          <br>
+          <center>
+            <h1 id="welcome-heading" style="font-size: 89.6px;"></h1><br><i><h5>The quintessential destination you've been
+                seeking.</h5></i></p>
+            <br>
+            <p>"Empowering education, one click at a time. Explore curated resources aligned with your curriculum
+              for an enriched learning experience.Unlock your potential with our centralized hub of educational
+              resources, tailored to fuel your academic success."</p>
+             <br>
+              
+             <span class="glowing" href="javascript:void(0);" onclick="scrollToEducationBox('education_box')" style='font-size:150px; cursor: pointer; color:rgba(255, 255, 255, 0.288) '>&#129171;</span>
+
+            </center>
+          <br>
+        </div>
+        <div class="col-lg-6">
+          <br>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section with 4 Huge Buttons -->
+  <center>
+    <p style="font-size: 100px;">Access our study content</p>
+  <p>Welcome to our curated playlist tailored specifically to complement your learning journey for this subject. Each video within this playlist is meticulously mapped with the syllabus and reflects the content covered by our esteemed faculty during classes. You can rely on this resource with full assurance that it aligns closely with your academic curriculum, providing comprehensive coverage and additional insights to enhance your understanding.</p>
+  </center><br>
+  <section class="huge-buttons-section" style="padding: 10px;">
+    <div class="container">
+      <br><br>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6" style="padding: 10px;">
+          <a href="yt_lectures.html" class="btn1 btn-primary btn-lg btn-block">
+            <img src="pngwing.com (2).png" style="width: 50px;"><br>YouTube Lectures
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6" style="padding: 10px;">
+          <a href="notes_pdf.html" class="btn1 btn-primary btn-lg btn-block">
+            <img src="pngwing.com (3).png" style="width: 50px;"><br>Notes
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6" style="padding: 10px;">
+          <a href="books_pdf.html" class="btn1 btn-primary btn-lg btn-block">
+            <img src="pngwing.com (4).png" style="width: 59px;"><br>Books
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6" style="padding: 10px;">
+          <a href="ppts.html" class="btn1 btn-primary btn-lg btn-block">
+            <img src="pngwing.com (5).png" style="width: 50px;"><br>PPTs
+          </a>
+        </div>
+      </div>
+      
+    <br><br>
+  </div>
+  </section>
+<br>
+  <section class="huge-buttons-section" style="padding: 10px;">
+    <div class="container">
+      <h2 class="text-center mt-5 mb-4">Why Us?</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" id="card2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Tailored to Curriculum</h5>
+              <p class="card-text">Our content is meticulously curated to align perfectly with academic standards.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" id="card1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Diverse Study Materials</h5>
+              <p class="card-text">Access PowerPoint presentations, YouTube lectures, notes, and e-books all in one place.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card" id="card3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Easy Navigation</h5>
+              <p class="card-text">Intuitive interface ensures quick and efficient access to study materials.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+<center>
+      <div class="col-md-4">
+        <div class="card" id="card1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Centralized Access</h5>
+            <p class="card-text">Access a diverse range of study materials, including lecture notes, textbooks, and PDFs, conveniently from one platform.</p>
+          </div>
+        </div>
+      </div>
+</center>
+  </div>
+  </section>
+
+
+  <!-- Speak Up Section -->
+  <br><br>
+  <section class="speak-up-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <br><br><br><br><br>
+          <h2>Speak up, shape tomorrow</h2>
+          <br>
+          <p>Drop your pearls of wisdom in our suggestion box. Your input fuels our evolution!</p>
+          <br>
+          <a class="btn btn-outline-light" href="https://forms.gle/Tu4TkFk1A1kUjncq5">Give
+            Feedback</a>
+<br><br><br><br><br><br>
+        </div>
+      </div>
+      <br>
+    </div>
+  </section>
+  <br><br>
+  <!-- Footer Section -->
+  <footer class="footer-section"
+    style="background-color: rgba(0, 0, 0, 0.5); color: white;">
+
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <h4>OneStopSolutions</h4>
+          <br><br>
+        </div>
+        <div class="col-lg-6">
+          <h2>Quick Links</h2>
+          <div class="row">
+            <div class="col">
+              <br>
+              <a href="about_us.html">About Us</a><br>
+              <a href="terms_of_services.html">Terms of Services</a><br>
+
+
+
+              <a href="#">Privacy Policy</a><br>
+              <a href="#">Contact Us</a><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h2>Contact Us</h2>
+          <p><i class="fas fa-phone"></i> 123-456-7890</p>
+          <p><i class="fas fa-envelope"></i> info@example.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Loader Container -->
+  
+  
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- Typed.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+  <script>
+
+function scrollToEducationBox() {
+            const educationBox = document.querySelector(".huge-buttons-section");
+            if (educationBox) {
+                const offset = -270; 
+                const educationBoxTop = educationBox.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({
+                    top: educationBoxTop + offset,
+                    behavior: "smooth"
+                });
+            }
+        }
+
+
+    $(document).ready(function(){
+      let typed = new Typed('#welcome-heading',{
+        strings : ['One Stop Solutions'],
+        typeSpeed : 100,
+        
+        
+      })
+    })
+    // Start progress animation when document is ready
+    $(document).ready(function () {
+      $(".bar").animate({
+        width: "100%"
+      }, 3000);
+      // Hide the loader after animation completes
+      setTimeout(function () {
+        $(".loading-container").fadeOut();
+      }, 3000);
+    });
+
+    $(document).ready(function(){
+    $("#card1").hover(function(){
+      $(this).addClass('shadow-lg').css("transition", "all 0.3s");
+    }, function(){
+      $(this).removeClass('shadow-lg');
+    });
+
+    $("#card2").hover(function(){
+      $(this).addClass('shadow-lg').css("transition", "all 0.3s");
+    }, function(){
+      $(this).removeClass('shadow-lg');
+    });
+
+    $("#card3").hover(function(){
+      $(this).addClass('shadow-lg').css("transition", "all 0.3s");
+    }, function(){
+      $(this).removeClass('shadow-lg');
+    });
+  });
+
+    
+  </script>
+</body>
+
+</html>
