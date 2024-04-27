@@ -5,6 +5,7 @@ const dotenv = require("dotenv")
 dotenv.config()
 const mongoose = require("mongoose")
 const path = require("path")
+const Notes = require("./models/noteModel")
 
 const MONGODB_URL= process.env.MONGO_URI;
 
@@ -25,6 +26,18 @@ app.get("/", (req, res) => {
     // res.send("Hello World!")
     res.render("index")
 });
+
+
+app.get("/notes",async(req,res)=>{
+    try {
+        const notes = await Notes.find();
+        res.json(notes);
+    } catch (error) {
+        console.error('Error fetching products:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+    
+})
 
 
 app.listen(port, () => {

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style_sign_in.css" />
+    <title>Sign in & Sign up Form</title>
+    <style>
+        /* Add loader styles */
+        .loader-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            display: none; /* Initially hidden */
+        }
+
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 4px solid #3498db;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Additional styles */
+        .container {
+            position: relative;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            z-index: 998; /* Ensure it's above other elements */
+            display: none; /* Initially hidden */
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="#" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" />
+                    </div>
+                    <input type="submit" value="Login" class="btn solid" />
+                    <a href="javascript:void(0);" class="btn solid" style="background-color: black; text-decoration: none;"
+                        onclick="loginAsGuest()">
+                        <center>
+                            <p style="padding-top: 6px;">Login as a Guest</p>
+                        </center>
+                    </a>
+                </form>
+                <form action="#" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" />
+                    </div>
+                    <input type="submit" class="btn" value="Sign up" />
+                </form>
+            </div>
+        </div>
+
+        <!-- Loader -->
+        <div class="overlay" id="loaderOverlay">
+            <div class="loader-container">
+                <div class="loader"></div>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Embrace Our Academic Community: Sign Up Today!</h3>
+                    <p>
+                        Discover a world of possibilities! Join us and explore a vibrant
+                        community where ideas flourish and connections thrive.
+                    </p>
+                    <button class="btn transparent" id="sign-up-btn">
+                        Sign up
+                    </button>
+                </div>
+                <img src="https://i.ibb.co/6HXL6q1/Privacy-policy-rafiki.png" class="image" alt="" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Welcome back</h3>
+                    <p>
+                        Thank you for being part of our community. Your presence enriches our
+                        shared experiences. Let's continue this journey together!
+                    </p>
+                    <button class="btn transparent" id="sign-in-btn">
+                        Sign in
+                    </button>
+
+                </div>
+                <img src="https://i.ibb.co/nP8H853/Mobile-login-rafiki.png" class="image" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for loader -->
+    <script>
+        function loginAsGuest() {
+            // Show loader overlay with fade-in effect
+            document.getElementById("loaderOverlay").style.display = "block";
+            setTimeout(function () {
+                document.getElementById("loaderOverlay").style.opacity = 1;
+            }, 10);
+
+            // Simulate loading time (2 seconds) and then redirect
+            setTimeout(function () {
+                window.location.href = "/";
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>
