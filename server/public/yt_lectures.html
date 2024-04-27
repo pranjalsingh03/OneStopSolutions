@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subject Selector</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  ::-webkit-scrollbar {
+      width: 0;
+    }
+
+    @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+body{
+  color: aliceblue;
+  background: linear-gradient(-45deg, rgb(47, 0, 79), rgb(154, 0, 214), rgba(32, 0, 0, 0.871), #1178d8);
+  background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+}
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  .semester {
+    margin-bottom: 20px;
+  }
+  .semester h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .subject-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none; /* added */
+  }
+
+  .subject-btn:hover {
+    transform: translateY(-5px);
+  }
+
+</style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(245, 245, 245, 0.08); border-bottom: 1px solid whitesmoke;">
+    <div class="container">
+        <!-- Left side: Brand -->
+        <a class="navbar-brand" href="#">OneStopSolutions</a>
+  
+        <!-- Center: Navigation Links -->
+        <div class="navbar-nav mx-auto">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="notes_pdf.html">Notes</a>
+            <a class="nav-item nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSexx5Kwza9OA15Q1OLKCit_kMUuDRdawL_6F-2hfRRMzln3Xw/viewform">Upload</a>
+        </div>
+  
+        <!-- Right side: Login/Sign Up Button -->
+        <div class="ml-auto">
+            <a class="btn btn-outline-light" href="index_sign_in.html">Login/Sign Up</a>
+        </div>
+    </div>
+  </nav>
+  
+<br><br>
+<div class="container">
+  <div class="semester" id="semester1">
+    
+    <h2 style="color: white;">Semester 1</h2>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLvTTv60o7qj_tdY9zH7YceES7jfXiZkAz">MTH-174 Engineering Mathematics</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLDN15nk5uLiAyM7MbRBF1eIFC8y5vMRxI">MEC 135 Basics of Mechanical Engineering</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLTYLC3XcJGZ5D3ohTYfOIR39L-H69f9Ca">PHY 110 Engineering Physics</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0PY9xunOzsP5kmYIz2Hu7i">CSE 326 Internet Programming Laboratory</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0">INT 108 Python Programming</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLWPirh4EWFpFIElSxplDlEhRDZHkBD-0n">PES 318 Soft Skills I</a>
+  </div>
+  <div class="semester" id="semester2">
+    <h2 style="color: white;">Semester 2</h2>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLxgZQoSe9cg1drBnejUaDD9GEJBGQ5hMt">CSE 101 C programming</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLUKuxwFRUnFH1AS6kiQrM_htVg-OuXkV9">ECE 249 Basic Electrical and Electronics Engineering</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLe4bSgoh2qPBQMrsriLM_hxKEnL1H1PhT">MTH 401 Discrete Mathematics</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PL9AUXQTZw3SujbyZwaKoacN0oRKWXTgCR">CHE 110 Environmental Studies</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2">CSE 320 Software Engineering</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y">INT 306 Database Management System</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PL9RcWoqXmzaKWxaNoDhW4O1kA0hK9AYys">PEL 130 Advance Communication Skills I</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLjAtNowPY2lcRx7S8asOZAALH7t5s1jUH">ECE 279 ECE Laboratory</a>
+  </div>
+  <div class="semester" id="semester3">
+    <h2 style="color: white;">Semester 3</h2>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PL9u0KLJvYwXi77f8I5sD2krk_l5rTNPcO">CSE 211 Computer Organization and Design</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_">CSE 205 Data Structures and Algorithms</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU">CSE 202 C++ Programming Language</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA">CSE 306 Computer Networking</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLe4bSgoh2qPACC6NpcRgNCgaJrpiNuJ4z">Probability and Statistics</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLGh6GKD4dNhn6etncXvtIAUh3hocJi639">CSE 307 InterNetworking Essentials</a>
+  </div>
+  <div class="semester" id="semester4">
+    <h2 style="color: white;">Semester 4</h2>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p">CSE 316 Operating Systems</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLWjmN065fOfGdAZrlP6316HVHh8jlvefD">INT 219 Introduction to Web Development</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa">INT 222 Advanced Web Development</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLmQAMKHKeLZ-iTT-E2kK9uePrJ1Xua9VL">CSE 310 Java Programming</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLCcXi-szYrq6WNyloMqEDxfppWykLBetX">PEA 305 Analytical Skills I</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLxgZQoSe9cg00xyG5gzb5BMkOClkch7Gr">CSE 408 Design and Analysis of Algorithm</a>
+    <a class="btn btn-outline-light subject-btn" href="https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg">CSE 325 Operating Systems Laboratory</a>
+  </div>
+</div>
+<footer class="footer-section"
+    style="background-color: rgba(0, 0, 0, 0.5); color: white;">
+
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <h4>OneStopSolutions</h4>
+          <br><br>
+        </div>
+        <div class="col-lg-6">
+          <h2>Quick Links</h2>
+          <div class="row">
+            <div class="col">
+              <br>
+              <a href="about_us.html">About Us</a><br>
+              <a href="terms_of_services.html">Terms of Services</a><br>
+
+
+
+              <a href="#">Privacy Policy</a><br>
+              <a href="#">Contact Us</a><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h2>Contact Us</h2>
+          <p><i class="fas fa-phone"></i> 123-456-7890</p>
+          <p><i class="fas fa-envelope"></i> info@example.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('.subject-btn').hover(function() {
+      $(this).css('transform', 'translateY(-10px)');
+    }, function() {
+      $(this).css('transform', 'translateY(0)');
+    });
+  });
+</script>
+
+</body>
+
+</html>
